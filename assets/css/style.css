@@ -36,7 +36,7 @@ header {
     padding: 20px;
     position: absolute;
     top: 0px;
-    left: 282px;
+    left: 239px;
     font-size: 36px;
     font-weight: 600px;
     
@@ -48,7 +48,7 @@ header {
     font-size: 12px;
     font-weight: 400300;
     letter-spacing: .5px;
-    margin-right: 160px;
+    margin-right: 193px;
 }
   
   .nav li {
@@ -100,7 +100,7 @@ html, body {
 .box {
     width: 960px;
     background: white;
-    margin: 15px 280px;
+    margin: 15px 225px;
     padding-bottom: 15px;
 }
 
