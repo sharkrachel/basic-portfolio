@@ -3,26 +3,53 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rachel Sipes Contact</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
     <body>
-            <header>
-                    <h1 class="name">Rachel Sipes</h1>
-                <!--Navigation Menu-->
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="index.html">About</a></li><!--
-                            --><li><a href="portfolio.html">Portfolio</a></li><!--
-                            --><li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </header>
-        
+        <header>
+            <h1 class="logo">Rachel Sipes</h1>
+        <!--Navigation Menu-->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">About</a></li><!--
+                    --><li><a href="portfolio.html">Portfolio</a></li><!--
+                    --><li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="body">
+            <!--About Me-->
+            <div class="box clearfix">
+                <h2 id="about">Contact</h2>
+                <div class="container">
+                    <form tareget="_blank" action="index.html" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Smith">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="example@gmail.com">
+
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" style="height:200px">
+                        </textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            Copyright &copy;
+        </footer>
     </body>
 </html>

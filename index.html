@@ -9,14 +9,16 @@
         <title>Rachel Sipes</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
+      
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <h1 class="name">Rachel Sipes</h1>
+            <h1 class="logo">Rachel Sipes</h1>
         <!--Navigation Menu-->
             <nav class="nav">
                 <ul>
@@ -26,16 +28,21 @@
                 </ul>
             </nav>
         </header>
-        <!--About Me-->
-        <h2>About Me</h2>
-        <img src="assets/images/Rachel Beach copy.jpg" alt="Rachel at the Beach">
-        <p>
-            Hi there! Welcome to my page... I'm Rachel. I grew up in a teeny, tiny town in the mountains of Arizona. I studied biology in college, but got my first grown-up job in marketing, so stuck with that for a while. I have been lucky enough to have lived and worked in England and Hawaii, but am now located in Philadelphia &#40go birds!&#41.
-            <br>
-            <br>
-            I'm currently enrolled in the University of Arizona's coding bootcamp and am developing skills in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, Java, Git and more. I'm looking forward to learning these new skills and seeing where this next path in life takes me. Stay tuned...
-        </p>
-        <footer>
+        <section class="body">
+            <!--About Me-->
+            <div class="box clearfix">
+                <h2 id="about">About Me</h2>
+                    <img class="photo" src="assets/images/Rachel Beach copy.jpg" alt="Rachel at the Beach">
+                    <p class="bio">
+                        Hi there! Welcome to my page... I'm Rachel. I grew up in a teeny, tiny town in the mountains of Arizona. I studied biology in college, but got my first grown-up job in marketing, so stuck with that for a while. I have been lucky enough to have lived and worked in England and Hawaii, but am now located in Philadelphia &#40go birds!&#41.
+                    <br>
+                    <br>
+                        I'm currently enrolled in the University of Arizona's coding bootcamp and am developing skills in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, Java, Git and more. I'm looking forward to learning these new skills and seeing where this next path in life takes me. Stay tuned...
+                    </p>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
             Copyright &copy;
         </footer>
     </body>
