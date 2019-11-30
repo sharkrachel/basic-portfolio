@@ -193,7 +193,7 @@ PORTFOLIO
 .work {
     position: relative;
     float: left;
-    margin: 20px 0 25px;
+    margin: 20px 25px 25px;
 }
 
 .work:nth-child(2n+2) {
@@ -216,5 +216,6 @@ h3 {
     font-weight: 600px;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
