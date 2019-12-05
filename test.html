@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Footer Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #container {
+            min-height: 100%;
+            position: relative;
+        }
+
+        #header {
+            padding: 10px;
+        }
+
+        #body {
+            padding: 10px;
+            padding-bottom: 60px;
+            /* Height of the footer */
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            /* Height of the footer */
+            background: #6cf;
+        }
+
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        .clearfix {
+            display: inline-block;
+        }
+
+        /* start commented backslash hack \*/
+        * html .clearfix {
+            height: 1%;
+        }
+
+        .clearfix {
+            display: block;
+        }
+
+        /* close commented backslash hack */
+
+        /*
+--------------
+CUSTOM STYLES
+--------------
+*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #777777;
+        }
+
+        header {
+            background: #ffffff;
+            color: #cccccc;
+            padding: 27px;
+            border-bottom: 2px solid #cccccc;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .logo {
+            background-color: #4aaaa5;
+            color: white;
+            padding: 20px;
+            position: absolute;
+            top: 0px;
+            left: 239px;
+            font-size: 36px;
+            font-weight: 600px;
+
+        }
+
+        .nav {
+            text-align: right;
+            color: #cccccc;
+            font-size: 12px;
+            font-weight: 400300;
+            letter-spacing: .5px;
+            margin-right: 85px;
+
+
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: top;
+            border-right: .5px solid #ddd;
+            padding: 0px 10px 0px 0px;
+        }
+
+        nav ul li:last-of-type {
+            border: none;
+            padding-right: none;
+        }
+
+        .nav li last-child {
+            margin-right: 0px;
+        }
+
+        /*
+--------------
+LINKS
+--------------
+*/
+
+        a:hover {
+            color: #4aaaa5;
+        }
+
+        a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 600px;
+        }
+
+        /*
+-------------
+ABOUT ME
+-------------
+*/
+
+        html,
+        body {
+            height: 100%;
+            margin: 0 padding: 0
+        }
+
+
+        .body {
+            background: url("../images/stripes-light.png");
+            background-repeat: repeat;
+            min-height: 100%;
+            padding: 15px;
+
+        }
+
+        .box {
+            width: 960px;
+            background: white;
+            margin: 15px 225px;
+            padding-bottom: 15px;
+        }
+
+        #about {
+            color: #4aaaa5;
+            font-size: 32px;
+            font-weight: 800px;
+            padding: 0px 0px 5px 0px;
+            margin: 0px 20px 0px 20px;
+            border-bottom: 2px solid lightgray;
+
+        }
+
+        .photo {
+            height: auto;
+            width: 132px;
+            float: left;
+            margin: 20px;
+        }
+
+        .bio {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #666666;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 8px;
+            margin: 0px;
+            padding: 20px;
+            color: white;
+            border-top: 15px solid #4aaaa5;
+        }
+
+        /* 
+-------------
+CONTACT PAGE
+-------------
+*/
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            margin-right: 5px;
+            resize: vertical
+        }
+
+        input[type=submit] {
+            background-color: #4aaaa5;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #ccc;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* 
+-------------
+PORTFOLIO
+-------------
+*/
+
+        .port-image {
+            width: auto;
+            height: 200px;
+            margin-top: 10px;
+            float: left;
+            margin-right: 25px;
+        }
+
+        .work {
+            position: relative;
+            float: left;
+            margin: 20px 25px 25px;
+        }
+
+        .work:nth-child(2n+2) {
+            clear: both;
+        }
+
+        .work img {
+            min-width: 100%;
+            border: 0 none;
+            opacity: .8;
+        }
+
+        h3 {
+            background-color: #4aaaa5;
+            color: white;
+            padding: 5px;
+            position: absolute;
+            bottom: 10px;
+            font-size: 22px;
+            font-weight: 600px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <header>
+                <h1 class="logo">Rachel Sipes</h1>
+                <!--Navigation Menu-->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <!--
+                                    -->
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <!--
+                                    -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="body">
+            <section class="body">
+                <!--About Me-->
+                <div class="box clearfix">
+                    <h2 id="about">About Me</h2>
+                    <img class="photo" src="assets/images/Rachel Beach copy.jpg" alt="Rachel at the Beach">
+                    <p class="bio">
+                        Hi there! Welcome to my page... I'm Rachel. I grew up in a teeny, tiny town in the mountains of
+                        Arizona.
+                        I studied biology in college, but got my first grown-up job in marketing, so stuck with that for
+                        a
+                        while. I have been lucky enough to have lived and worked in England and Hawaii, but am now
+                        located in
+                        Philadelphia &#40go birds!&#41. In my free time, I like to get outside and explore. I love scuba
+                        diving,
+                        hiking and checking out breweries in the city.
+                        <br>
+                        <br>
+                        I'm currently enrolled in the University of Arizona's coding bootcamp and am developing skills
+                        in HTML5,
+                        CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB,
+                        MySQL,
+                        Command Line, Java, Git and more. I'm looking forward to learning these new skills and seeing
+                        where this
+                        next path in life takes me. Stay tuned...
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div id="footer">
+            <!--Footer-->
+            <footer class="footer">
+                Copyright &copy;
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>
