@@ -100,13 +100,9 @@ html, body {
     padding: 0;
 }
 
-
-.body {
-    background: url("../images/stripes-light.png");
-    background-repeat: repeat;
-    height: 100%;
-    padding: 15px;
-
+body {
+  background: url("../images/stripes-light.png");
+  background-repeat: repeat;
 }
 
 .box {
@@ -247,4 +243,16 @@ body {
 }
 .footer {
   flex-shrink: 0;
+}
+.footer {
+  background: #666666;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 8px;
+  padding: 20px;
+  color: white;
+  border-top: 15px solid #4aaaa5;
+
 }
